@@ -1892,16 +1892,9 @@ nav {
 }
 
 .navigation__item a:hover {
-	color: #FFF;
-	border-color: #FFF;
+	color: #ffd103;
+	//	border-color: #FFF;
 	opacity: 1;
-}
-
-.navigation__item_2 {
-	display: list-item;
-	list-style-type: none;
-	text-align: left;
-	margin: 5px 5px;
 }
 
 .navigation--social {
@@ -2235,3 +2228,29 @@ input[type="tel"]:-ms-input-placeholder {
 // 	.btn, .navigation__item a {
 // 		display: block;
 // 		margin-bottom: .4em; } }
+.social-icons {
+	a {
+		border: 0;
+	}
+}
+
+.call-to-actions {
+	.navigation__item_2 {
+		display: list-item;
+		list-style-type: none;
+		text-align: left;
+		margin: 5px 5px;
+	}
+
+	a {
+		background-color: #ffd103;
+		color: black;
+		border-radius: 1px;
+		border: 0;
+
+		&:hover {
+			color: black;
+			opacity: 1;
+		}
+	}
+}
