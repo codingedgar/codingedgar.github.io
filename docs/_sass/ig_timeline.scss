@@ -1,0 +1,68 @@
+body {
+  background: #fafafa;
+}
+
+.ig-timeline {
+  min-width: 100px;
+}
+
+.ig-timeline h1 {
+  color: black;
+  text-shadow: none;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 2.5em;
+  letter-spacing: 4px;
+  margin-bottom: 0;
+}
+
+.ig-timeline p {
+  color: black;
+  text-shadow: none;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 200;
+}
+
+.panel-cover {
+  background: #fafafa;
+  position: unset;
+}
+
+.panel-main__inner {
+  padding: 0;
+}
+
+.ig-timeline-main {
+  display: flex;
+}
+
+.ig-timeline-main ul {
+  display: grid;
+  /* grid-template-columns: repeat(3, 150px); */
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-auto-rows: calc((100vw/3)-32px); */
+  grid-auto-rows: calc((100vw - 32px)/3);
+  grid-gap: 16px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto 50px auto;
+}
+
+@media(min-width:620px) {
+  .ig-timeline-main ul {
+    grid-auto-rows: calc((620px - 32px)/3);
+  }
+}
+
+.ig-timeline-main li {
+  /* height: 150px;
+    width: 150px; */
+  /* height: 100%;
+    width: 100%; */
+  margin: 0;
+}
+
+.ig-timeline-main img {
+  height: 100%;
+  width: 100%;
+}
