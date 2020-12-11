@@ -1,1 +1,1 @@
-check more at http://codingedgar.com
+check more at https://codingedgar.com
