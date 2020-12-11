@@ -1,0 +1,88 @@
+<header class="panel-cover ig-timeline">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+      <div class="panel-main__content">
+        <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
+          <img src="{{ site.baseurl }}{{ site.profilepic }}" class="user-image" alt="My Profile Photo">
+        </a>
+        <h1>{{ site.title }}</h1>
+        <p>
+          Tap Photos to See Details
+        </p>
+        <article class="ig-timeline-main">
+          <ul>
+            {% for project in site.data.instagram %}
+            <li>
+              {% if project.link %}
+              <a href="{{project.link}}" target="_blank" rel="noopener noreferrer">
+                {% endif %}
+                <img decoding="auto" style="object-fit: cover;" sizes="289.328125px" srcset="{{project.img}}">
+                {% if project.link %}
+              </a>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>
+
+<style>
+  /* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;900&display=swap'); */
+
+  body {
+    background: #fafafa;
+  }
+
+  .ig-timeline h1 {
+    color: black;
+    text-shadow: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+  }
+
+  .ig-timeline p {
+    color: black;
+    text-shadow: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+  }
+
+  .panel-cover {
+    background: #fafafa;
+    position: unset;
+  }
+
+  .panel-main__inner {
+    padding: 0;
+  }
+
+  .ig-timeline-main {
+    display: flex;
+  }
+
+  .ig-timeline-main ul {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-gap: 16px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto 50px auto;
+  }
+
+  .ig-timeline-main li {
+    height: 150px;
+    width: 150px;
+    margin: 0;
+  }
+
+  .ig-timeline-main img {
+    height: 100%;
+    width: 100%;
+  }
+</style>

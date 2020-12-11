@@ -1,0 +1,38 @@
+# Site settings
+title: Edgar Rodríguez
+description: 'Edgar Rodríguez'
+url: 'http://codingedgar.com'
+baseurl: ''
+profilepic: '/images/headshot.png'
+bkimage: '/images/pexels-kadri-vosumae-756903.jpg'
+google_analytics: UA-XXXXXX-X
+font_awesome: '80f7355090.js'
+
+author:
+  name: 'Edgar Rodríguez'
+  email: codingedgar@gmail.com
+  twitter_username: codingedgar
+#  facebook_username: joshgerdes
+  github_username:  codingedgar
+  linkedin_username:  codingedgar
+  instagram:  codingedgar
+#  meetup_name: Azure-Meetup-Rostock-MV
+  medium: '@codingedgar'
+
+# Build settings
+destination: _site
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+#plugins: ['jekyll-paginate']
+exclude: ['README.md', 'screenshot-overview.png']
