@@ -1888,13 +1888,14 @@ nav {
 	position: relative;
 	border-color: #FFF;
 	color: #FFF;
-	opacity: .8;
+	opacity: 1;
 }
 
 .navigation__item a:hover {
 	color: #ffd103;
 	//	border-color: #FFF;
 	opacity: 1;
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 1), 0 6px 20px 0 rgba(255, 255, 255, 1);
 }
 
 .navigation--social {
