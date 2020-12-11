@@ -1667,12 +1667,12 @@ hr {
 
 .panel-cover {
 	display: block;
-	position: fixed;
+	// position: fixed;
 	z-index: 900;
 	width: 100%;
 	max-width: none;
 	height: 100%;
-	background: url(../images/background-cover.jpg) top left no-repeat #666666;
+	// background: url(../images/background-cover.jpg) top left no-repeat #666666;
 	background-size: cover;
 }
 
@@ -1689,9 +1689,9 @@ hr {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: rgba(68, 68, 68, 0.6);
-	background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
-	background-image: linear-gradient(140deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
+	background-color: #1d1d1d;
+	//background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
+	//background-image: linear-gradient(140deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
 }
 
 .panel-cover__logo {
@@ -1732,7 +1732,7 @@ hr {
 }
 
 .panel-main__content {
-	width: 100vw;
+	width: 100%;
 	max-width: 620px;
 	margin: 0 auto;
 }
@@ -2245,7 +2245,7 @@ input[type="tel"]:-ms-input-placeholder {
 	a {
 		background-color: #ffd103;
 		color: black;
-		border-radius: 1px;
+		border-radius: 3px;
 		border: 0;
 
 		&:hover {

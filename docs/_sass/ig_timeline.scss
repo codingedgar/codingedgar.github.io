@@ -6,6 +6,8 @@ body {
   min-width: 100px;
   background: #fafafa;
   position: unset;
+  // max-width: 100%;
+  // margin: 25px 0 0 0;
 
   h1 {
     color: black;
@@ -34,10 +36,8 @@ body {
 
   .ig-timeline-main ul {
     display: grid;
-    /* grid-template-columns: repeat(3, 150px); */
     grid-template-columns: repeat(3, 1fr);
-    /* grid-auto-rows: calc((100vw/3)-32px); */
-    grid-auto-rows: calc((100vw - 32px)/3);
+    grid-auto-rows: calc((100% - 32px)/3);
     grid-gap: 16px;
     list-style-type: none;
     padding: 0;

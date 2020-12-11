@@ -1,4 +1,4 @@
-<header class="panel-cover" style="background-image: url({{ site.baseurl }}{{ site.bkimage }})">
+<header class="panel-cover">
   <div class="panel-main">
     <div class="panel-main__inner panel-inverted">
       <div class="panel-main__content">
@@ -21,7 +21,7 @@
                 Like my content? You'll enjoy my Newsletter!
                 <span class="label">Newsletter</span>
               </a>
-            </li>      
+            </li>
             <li class="navigation__item navigation__item_2">
               <a href="/instagram" title="Instagram">
                 <i class="fab fa-instagram fa-lg"></i>
@@ -36,7 +36,7 @@
 
           <nav class="cover-navigation navigation--social social-icons">
             <ul class="navigation">
-               {% if site.author.twitter_username %}
+              {% if site.author.twitter_username %}
               <!-- Twitter -->
               <li class="navigation__item">
                 <a href="http://twitter.com/{{ site.author.twitter_username }}"
