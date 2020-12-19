@@ -11,7 +11,7 @@
         <article class="ig-timeline-main">
           <ul>
             {% for project in site.data.instagram %}
-            <li>
+            <li id="{{project.ig}}" {% if project.after %} data-after="{{project.after}}" {% endif %}>
               {% if project.link %}
               <a href="{{project.link}}" target="_blank" rel="noopener noreferrer">
                 {% endif %}
@@ -22,6 +22,16 @@
             </li>
             {% endfor %}
           </ul>
+          <script>
+            const now = new Date();
+            document.querySelectorAll('[data-after]')
+              .forEach(node => {
+                const parsed = new Date(node.getAttribute('data-after'));
+                if (now < parsed) {
+                  node.parentNode.removeChild(node);
+                }
+              })
+          </script>
       </div>
     </div>
   </div>
