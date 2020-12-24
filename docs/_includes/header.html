@@ -36,6 +36,17 @@
 
           <nav class="cover-navigation navigation--social social-icons">
             <ul class="navigation">
+              {% if site.author.youtube %}
+              <!-- Twitter -->
+              <li class="navigation__item">
+                <a href="{{ site.author.youtube }}"
+                  title="Coding Edgar in YouTube" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-youtube fa-lg"></i>
+                  <span class="label">YouTube</span>
+                </a>
+              </li>
+              {% endif %}
+
               {% if site.author.twitter_username %}
               <!-- Twitter -->
               <li class="navigation__item">
