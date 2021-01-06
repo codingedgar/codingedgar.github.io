@@ -1,5 +1,149 @@
-- ig: 66
-  img: /images/ig/66.jpg
+- ig: 69
+  img: /images/ig/69.jpg
+  link: https://youtu.be/siqhEc3QnxE
+  alt: "Did you know the Logical OR Assignment?
+
+There has been 2 kinds of Assignment Operators in JavaScript (besides the actual Assignment Operator =)
+Arithmetic Assignment Operators, like +=, *=, -=.
+Bitwise Operators <<=, >>>=, ^=, &=.
+
+But there's a new kind of operators ready for you to use today in JavaScript, called: Logical Assignment Operators.
+
+Today I'm going to show you the Logical OR Assignment.
+
+The logical OR assignment (x ||= y) operator only assigns if x is falsy.
+
+The logical OR operator works like this:
+
+x || y;
+// returns x when x is truthy
+// returns y when x is not truthy
+
+The logical OR operator short-circuits: the second operand is only evaluated if the first operand doesn’t already determine the result.
+
+Logical OR assignment short-circuits as well, meaning it only performs an assignment if the logical operation would evaluate the right-hand side. In other words, x ||= y is equivalent to:
+
+x || (x = y);
+
+And not equivalent to the following which would always perform an assignment:
+
+x = x || y;
+
+Note that this behavior is different to mathematical and bitwise assignment operators.
+
+I explained this operator in more detail, on YouTube and Medium, wanna watch the video?⁣⁣⁣⁣
+- Link in the bio 🔥⁣⁣⁣⁣
+⁣
+Have any questions about web development?⁣⁣
+- Ask away 💌⁣⁣
+⁣⁣
+Wanna build a web app?⁣⁣
+- Get in touch 👨‍💻⁣⁣
+⁣⁣
+Want to support me in my journey?⁣⁣
+- Leave a comment with good vibes.⁣⁣
+- Tag a friend that might find my page @codingedgar interesting.⁣⁣
+- Turn notifications to know when I publish new stuff.⁣⁣
+- Destroy the like button. (both here and in YouTube, of course)⁣
+
+#webdevelopement #teamtreehouse #juniorwebdeveloper #learncode #reims #lille #paris #rennes #codetutorial #seniordeveloper #es2020 #programador #toulouse #codeblocks #htmlbasics #marseille #lyon #devops #bordeaux #nantes #devtips #codetutorials #programmingtip #fullstackwebdeveloper #daysofcode #javascriptprojects #htmllists #vscodetheme #techtalkcommunity #webdev_guru"
+  after: "2021-01-08T12:00:00.000Z"
+
+- ig: 68
+  img: /images/ig/68.jpg
+  link: https://youtu.be/siqhEc3QnxE
+  alt: "Did you know the Logical AND Assignment?
+
+There has been 2 kinds of Assignment Operators in JavaScript (besides the actual Assignment Operator =)
+Arithmetic Assignment Operators, like +=, *=, -=.
+Bitwise Operators <<=, >>>=, ^=, &=.
+
+But there's a new kind of operators ready for you to use today in JavaScript, called: Logical Assignment Operators.
+
+Today I'm going to show you Logical AND Assignment.
+
+The logical AND assignment (x &&= y) operator only assigns if x is truthy.
+
+The logical AND operator is evaluated left to right, it is tested for possible short-circuit evaluation using the following rule:
+(some falsy expression) && expr is short-circuit evaluated to the falsy expression;
+
+Short circuit means that the expr part above is not evaluated, hence any side effects of doing so do not take effect (e.g., if expr is a function call, the calling never takes place).
+
+Logical AND assignment short-circuits as well meaning that x &&= y is equivalent to:
+
+x && (x = y);
+
+And not equivalent to the following which would always perform an assignment:
+
+x = x && y;
+
+I explained this operator in more detail, on YouTube and Medium, wanna watch the video?⁣⁣⁣⁣
+- Link in the bio 🔥⁣⁣⁣⁣
+⁣
+Have any questions about web development?⁣⁣
+- Ask away 💌⁣⁣
+⁣⁣
+Wanna build a web app?⁣⁣
+- Get in touch 👨‍💻⁣⁣
+⁣⁣
+Want to support me in my journey?⁣⁣
+- Leave a comment with good vibes.⁣⁣
+- Tag a friend that might find my page @codingedgar interesting.⁣⁣
+- Turn notifications to know when I publish new stuff.⁣⁣
+- Destroy the like button. (both here and in YouTube, of course)⁣
+
+#cssgrid #datastructure #fullstackdev #javscript #googlecloud #prague #jenkins #pilsen #stockholm #flexbox #webdeveloper #ostrava #brno #browser #hmtl5 #npm #opensource #uppsala #fullstack #jscripters #es6features #lifetocode #code_with_anna_strings #code_with_anna #programmerprogramming #codewithanna_strings #webmasterproject #codecrumbs #codewithanna #heroku"
+  after: "2021-01-08T12:00:00.000Z"
+
+- ig: 67
+  img: /images/ig/67.jpg
+  link: https://youtu.be/siqhEc3QnxE
+  alt: "A new category of operators in JavaScript ✨
+
+There has been 2 kinds of Assignment Operators in JavaScript (besides the actual Assignment Operator =)
+- Arithmetic Assignment Operators, like +=, *=, -=.
+- Bitwise Operators <<=, >>>=, ^=, &=.
+
+But there's a new kind of operators ready for you to use today in JavaScript, called: Logical Assignment Operators.
+
+Today I'm going to show you Logical Nullish Assignment.
+
+The Logical Nullish Assignment (x ??= y) operator only assigns if x is nullish (null or undefined).
+
+The Nullish Coalescing Operator is evaluated left to right, it is tested for possible short-circuit evaluation using the following rule:
+
+(some expression that is neither null nor undefined) ?? expr is short-circuit evaluated to the left-hand side expression if the left-hand side proves to be neither null nor undefined.
+
+Short circuit means that the expr part above is not evaluated, hence any side effects of doing so do not take effect (e.g., if expr is a function call, the calling never takes place).
+
+Logical nullish assignment short-circuits as well meaning that x ??= y is equivalent to:
+
+x ?? (x = y);
+
+And not equivalent to the following which would always perform an assignment:
+
+x = x ?? y;
+
+I explained this operator in more detail, on YouTube and Medium, wanna watch the video?⁣⁣⁣⁣
+- Link in the bio 🔥⁣⁣⁣⁣
+⁣
+Have any questions about web development?⁣⁣
+- Ask away 💌⁣⁣
+⁣⁣
+Wanna build a web app?⁣⁣
+- Get in touch 👨‍💻⁣⁣
+⁣⁣
+Want to support me in my journey?⁣⁣
+- Leave a comment with good vibes.⁣⁣
+- Tag a friend that might find my page @codingedgar interesting.⁣⁣
+- Turn notifications to know when I publish new stuff.⁣⁣
+- Destroy the like button. (both here and in YouTube, of course)⁣
+
+#codingpics #learnhowtocode #webdevelop #softwarearchitect #softwaredev #opensourcesoftware #webdeveloperslife #programmingstudents #computerprogramming #fullstacklife #computersciencemajor #webdevelopmentagency #spain #germany #russia #finland #webdeisgn #softwareengineers #webdeveloperlife #poland #programmer #sweden #webdesignagency #learnprogramming #france #ukraine #learntocode #programmers #norway #javascriptbottcamp"
+  after: "2021-01-07T12:00:00.000Z"
+
+- ig: https://www.instagram.com/p/CJtmbrEnvx5/
+  img: /images/ig/CJtmbrEnvx5.jpg
   link: https://youtu.be/siqhEc3QnxE
   alt: "Wanna know the story behind this video? 👇⁣
 ⁣
@@ -44,8 +188,8 @@ Want to support me in my journey?⁣⁣
 ⁣
 #stuttgart #leipzig #hamburg #array #computerscience #javascriptframework #javascriptsweden #softwareseveloper #dortmund #angular2 #frontenddeveloper #javascriptdev #javascriptengineer #fullstackdeveloper #thecodecrumbs #munich #webdeveloper #frontenddev #frankfurt #buildtheweb #javascriptlover #javascriptcode #webdev #fullstackdevelopers #dev #javascriptdevelopers #cologne #berlin #javascripts #typescript"
 
-- ig: 65
-  img: "/images/ig/65.jpg"
+- ig: https://www.instagram.com/p/CJrasYSgVDG/
+  img: "/images/ig/CJrasYSgVDG.jpg"
   link: https://medium.com/javascript-in-plain-english/3-new-javascript-operators-that-you-can-use-today-649da09df09d?source=friends_link&sk=26ec59ac1bda06e814779acb0f23259c
   alt: "3 New JavaScript Operators that you can use today!⁣
 ⁣
@@ -73,8 +217,8 @@ Want to support me in my journey?⁣
 ⁣
 #softwaredevelopers #frontendwebdeveloper #nodejsdeveloper #websitedeveloper #javascriptdevelopment #softwaredevelopment #fullstackdevelopment #javascriptprogramming #jsdev #webdevelopmentcompany #javascriptbook #denojs #es6 #javascripting #javascriptislife #webdevloper #javascriptlibraries #webdevelopment #studyjavascript #javascriptessentials #javascriptprogrammer #javascriptstrings #javascriptmastery #javascriptbootcamp #jseseries #javascripttips #javascriptindonesia #studystrings #instagramforprogrammers #javascriptbrasil"
 
-- ig: 64
-  img: "/images/ig/64.jpg"
+- ig: https://www.instagram.com/p/CJnE2SbruvA/
+  img: "/images/ig/CJnE2SbruvA.jpg"
   link: https://youtu.be/GuNKg-dmXpA
   alt: "Have you ever used NativeScript?⁣
 ⁣
@@ -84,8 +228,8 @@ If you have any questions about web development don't hesitate to drop it in the
 ⁣
 #codingtutorials #codingbootcamp #codinglife #codechallenge #programacion #mobileapplication #programmerlife #codingfun #girlswhocode #codingdays #programmingisfun #softwareengineer #coderlife #codingchallenge #codeismylife #swiftlang #programmingtips #codingisfun #developer #code #coding #learncoding #mobileapps #iosdev #softwareengineering #codingdad #developerspace #flutter #peoplewhocode #programminghacks"
 
-- ig: 63
-  img: "/images/ig/63.jpg"
+- ig: https://www.instagram.com/p/CJkgAfznIef/
+  img: "/images/ig/CJkgAfznIef.jpg"
   link: https://youtu.be/GuNKg-dmXpA
   alt: "Do you use any of this libraries?⁣
 ⁣
@@ -97,8 +241,8 @@ If you have any questions about web development don't hesitate to drop it in the
 ⁣
 #monogodb #sequalize #graphql #lodash #rxjs #expressjs #nativescript #webdevelopers #mobx #nextjs #mongodb #nosql #vscode #eslint #firebase #restapi #postgresql #materialui #mongoose #knexjs #reactredux #reactdev #nuxtjs #reactbootstrap #gatsbyjs #angular7 #reactreduxdeveloper #webapp #momentjs #jstutorial "
 
-- ig: 62
-  img: "/images/ig/62.jpg"
+- ig: https://www.instagram.com/p/CJh7MLtIjv_/
+  img: "/images/ig/CJh7MLtIjv_.jpg"
   link: https://youtu.be/GuNKg-dmXpA
   alt: "Do you know Appium?
 
@@ -114,8 +258,8 @@ If you have any questions about web development don't hesitate to drop it in the
 
 #frontendengineer #jquerymobile #mobiledeveloper #softwaredeveloper #csstricks #htmltemplate #html_css #gatsby #jquery #jsdeveloper #backenddev #webdeveloping #webappdevelopment #webpack #htmlcode #cssanimation #htmlcoding #webapps #backenddevelopment #js #postman #redux #redis #vanillajavascript #jshelpful #bootstrap4admin #reactjsacademy #curryandcode #programmerplus #babel"
 
-- ig: 61
-  img: "/images/ig/61.jpg"
+- ig: https://www.instagram.com/p/CJfWZEcoiYI/
+  img: "/images/ig/CJfWZEcoiYI.jpg"
   link: https://youtu.be/GuNKg-dmXpA
   alt: "What is the OpenJS Foundation?
 
@@ -141,8 +285,8 @@ If you have any questions about web development don't hesitate to drop it in the
 #angularjs #webprogramming #htmltutorial #learnjs #html #html5 #php #css3 #nodejs #learnsass #javascript30 #reactdeveloper #reactjsdeveloper #reactjsdevelopment #learnjavascript #css3code #wordpress #basicjavascript #bootstrap #learnjavascriptdeeply #learnjavascriptonline #basicsjavascript #javascript_love #vanillajs #vanillajsnow #vanillajsavascript #javascriptbeginner #frontenddeveloment #frontenddevlopers #learnjssafe
 "
 
-- ig: 60
-  img: "/images/ig/60.jpg"
+- ig: https://www.instagram.com/p/CJcxoxoIN_v/
+  img: "/images/ig/CJcxoxoIN_v.jpg"
   link: https://youtu.be/GuNKg-dmXpA
   alt: "What is JavaScriptLandia?
 
