@@ -33,9 +33,9 @@
             {% for project in site.data.instagram %}
             <li id="{{project.ig}}" {% if project.after %} data-after="{{project.after}}" {% endif %}>
               {% if project.link %}
-              <a href="{{project.link}}" target="_blank" rel="noopener noreferrer">
+              <a href="{{project.link}}" target="_blank" rel="noopener noreferrer" >
                 {% endif %}
-                <img decoding="auto" style="object-fit: cover;" sizes="289.328125px" srcset="{{project.img}}">
+                <img decoding="auto" style="object-fit: cover;" sizes="289.328125px" srcset="{{project.img}}" alt="{{project.alt}}">
                 {% if project.link %}
               </a>
               {% endif %}
