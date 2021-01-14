@@ -1,3 +1,36 @@
+- ig: 71
+  img: /images/ig/71.jpg
+  link: https://medium.com/javascript-in-plain-english/2-excellent-websites-for-web-developers-781339527ab0?source=friends_link&sk=15817e84345f0ed7060ace5d4ee68ba4
+  alt: "What is the Contact Picker API?
+
+Access to the user's contacts on a mobile device has been a feature of iOS/Android apps since (almost) the dawn of time. It's one of the most common feature requests I hear from web developers, and is often the key reason they build an iOS/Android app.
+
+Available in Chrome 80 on Android, the Contact Picker API is an on-demand API that allows users to select entries from their contact list and share limited details of the selected entries with a website. It allows users to share only what they want, when they want, and makes it easier for users to reach and connect with their friends and family.
+
+The entry point to the Contact Picker API is navigator.contacts.select(). When called, it returns a promise and shows the contact picker, allowing the user to select the contact(s) they want to share with the site. After selecting what to share and clicking Done, the promise resolves with an array of contacts selected by the user.
+
+📜📜📜📜 👀 
+I discovered this feature in a fantastic video from @fireship_dev.
+
+I go more in-depth about why I enjoyed Fireship's video in my latest article, link in bio ✨
+
+💌
+Have any questions about web development?⁣
+- Ask away
+⁣
+👨‍💻
+Wanna build a web app?⁣
+- Get in touch 
+⁣
+Want to support me in my journey?⁣
+- Leave a comment with good vibes.⁣
+- Tag a friend you might find this account fascinating.⁣
+- Turn notifications to know when I publish new stuff.⁣
+- Destroy the like button.⁣
+
+#javascriptengineer #javascriptlearning #frontenddeveloper #fullstackdeveloper #ecmascript #javascripts #javascriptcode #css #javascript #webdev #angular #frontenddevelopment #angular2 #frontend #htmlcss #frontenddev #javascriptframework #typescript #reactjs #reactnative #javascriptdeveloper #webdeveloper #vuejs #javascriptdevelopers #javascriptdev #javascriptlover #reactjsframework #javascriptbasics #javascripttutorial #angular6"
+  after: "2021-01-14T15:00:00.000Z"
+
 - ig: 70
   img: /images/ig/70.jpg
   link: https://medium.com/javascript-in-plain-english/2-excellent-websites-for-web-developers-781339527ab0?source=friends_link&sk=15817e84345f0ed7060ace5d4ee68ba4
