@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
-  <body>
-    {% include ig_timeline.html %}
+
+<head>
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/timeline.css?{{site.time | date: '%s%N'}}">
+  {% include head-links.html %}
+</head>
+
+<body>
+  {% include ig_timeline.html %}
 </body>
+
 </html>

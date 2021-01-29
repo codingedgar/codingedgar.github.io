@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "highlights.css",
+	"sources": [
+		"highlights.scss",
+		"_sass/highlights.scss"
+	],
+	"sourcesContent": [
+		"@import \"highlights\";\n",
+		"body {\n  background-color: #1d1d1d;\n}\n\n.ig-timeline {\n  min-width: 100px;\n  position: unset;\n  // max-width: 100%;\n  margin: 25px 0 25px 0;\n\n  h1 {\n    color: black;\n    text-shadow: none;\n    font-family: 'Nunito Sans', sans-serif;\n    font-weight: 900;\n    font-size: 2.5em;\n    letter-spacing: 4px;\n    margin-bottom: 0;\n  }\n\n  p {\n    color: black;\n    text-shadow: none;\n    font-family: 'Nunito Sans', sans-serif;\n    font-weight: 200;\n  }\n\n  .panel-main__inner {\n    padding: 0;\n  }\n\n  .ig-timeline-main {\n    display: flex;\n\n    ul {\n      display: grid;\n      grid-template-columns: repeat(3, 1fr);\n      grid-auto-rows: calc((100vw - 32px)/3);\n      grid-gap: 16px;\n      list-style-type: none;\n      padding: 0;\n      margin: 0 auto 0 auto;\n    }\n\n    li {\n      margin: 0;\n      position: relative;\n\n      &:hover {\n        animation: nextarrow .5s;\n        animation-fill-mode: forwards;\n      }\n    }\n\n    img {\n      height: 100%;\n      width: 100%;\n    }\n  }\n\n  @media(min-width:620px) {\n    .ig-timeline-main ul {\n      grid-auto-rows: calc((620px - 32px)/3);\n    }\n  }\n\n}\n\n@keyframes nextarrow {\n  0% {\n    box-shadow: 0\n  }\n\n  100% {\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,IAAI,AAAC,CACH,gBAAgB,CAAE,OAAO,CAC1B,AAED,AAAA,YAAY,AAAC,CACX,SAAS,CAAE,KAAK,CAChB,QAAQ,CAAE,KAAK,CAEf,MAAM,CAAE,aAAa,CA0DtB,AA9DD,AAME,YANU,CAMV,EAAE,AAAC,CACD,KAAK,CAAE,KAAK,CACZ,WAAW,CAAE,IAAI,CACjB,WAAW,CAAE,yBAAyB,CACtC,WAAW,CAAE,GAAG,CAChB,SAAS,CAAE,KAAK,CAChB,cAAc,CAAE,GAAG,CACnB,aAAa,CAAE,CAAC,CACjB,AAdH,AAgBE,YAhBU,CAgBV,CAAC,AAAC,CACA,KAAK,CAAE,KAAK,CACZ,WAAW,CAAE,IAAI,CACjB,WAAW,CAAE,yBAAyB,CACtC,WAAW,CAAE,GAAG,CACjB,AArBH,AAuBE,YAvBU,CAuBV,kBAAkB,AAAC,CACjB,OAAO,CAAE,CAAC,CACX,AAzBH,AA2BE,YA3BU,CA2BV,iBAAiB,AAAC,CAChB,OAAO,CAAE,IAAI,CA0Bd,AAtDH,AA8BI,YA9BQ,CA2BV,iBAAiB,CAGf,EAAE,AAAC,CACD,OAAO,CAAE,IAAI,CACb,qBAAqB,CAAE,cAAc,CACrC,cAAc,CAAE,sBAAsB,CACtC,QAAQ,CAAE,IAAI,CACd,eAAe,CAAE,IAAI,CACrB,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,aAAa,CACtB,AAtCL,AAwCI,YAxCQ,CA2BV,iBAAiB,CAaf,EAAE,AAAC,CACD,MAAM,CAAE,CAAC,CACT,QAAQ,CAAE,QAAQ,CAMnB,AAhDL,AA4CM,YA5CM,CA2BV,iBAAiB,CAaf,EAAE,CAIE,KAAK,AAAC,CACN,SAAS,CAAE,aAAa,CACxB,mBAAmB,CAAE,QAAQ,CAC9B,AA/CP,AAkDI,YAlDQ,CA2BV,iBAAiB,CAuBf,GAAG,AAAC,CACF,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CACZ,AAGH,MAAM,mBACJ,CAzDJ,AAyDI,YAzDQ,CAyDR,iBAAiB,CAAC,EAAE,AAAC,CACnB,cAAc,CAAE,sBAAsB,CACvC,CAAA,AAKL,UAAU,CAAV,SAAU,CACR,EAAE,CACA,UAAU,CAAE,CACd,CAEA,IAAI,CACF,UAAU,CAAE,CAAC,CAAC,GAAG,CAAC,GAAG,CAAC,CAAC,CAAC,eAAkB,CAAE,CAAC,CAAC,GAAG,CAAC,IAAI,CAAC,CAAC,CAAC,gBAAmB"
+}

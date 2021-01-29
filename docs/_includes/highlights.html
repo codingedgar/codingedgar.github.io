@@ -16,45 +16,79 @@
         <nav class="cover-navigation navigation--social call-to-actions">
           <ul>
             <li class="navigation__item navigation__item_2">
-              <a href="{{ site.author.new_youtube_video }}" title="New YouTube Video!" target="_blank" rel="noopener noreferrer">
+              <a href="{{ site.author.new_youtube_video }}" title="New YouTube Video" target="_blank"
+                rel="noopener noreferrer">
                 <i class="fab fa-youtube fa-lg"></i>
                 New YouTube Video 🔥
                 <span class="label">New YouTube Video</span>
               </a>
-            </li>  
+            </li>
             <li class="navigation__item navigation__item_2">
-              <a href="{{ site.author.new_blog_post }}" title="New Blog Post!" target="_blank" rel="noopener noreferrer">
+              <a href="{{ site.author.new_blog_post }}" title="New Blog Post" target="_blank"
+                rel="noopener noreferrer">
                 <i class="fab fa-medium fa-lg"></i>
                 New Blog Post 🔥
                 <span class="label">New Blog Post 🔥</span>
               </a>
-            </li>  
+            </li>
             <li class="navigation__item navigation__item_2">
               <a href="http://eepurl.com/hg7AeP" title="Newsletter" target="_blank" rel="noopener noreferrer">
                 <i class="fas fa-newspaper fa-lg"></i>
-                Join my monthly Newsletter!
+                Join my monthly Newsletter
                 <span class="label">Newsletter</span>
-              </a>
-            </li>
-            <li class="navigation__item navigation__item_2">
-              <a href="/instagram-links" title="Instagram">
-                <i class="fab fa-instagram fa-lg"></i>
-                Instagram Links
               </a>
             </li>
           </ul>
         </nav>
 
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+        <p class="panel-cover__description" style="font-family: 'Nunito Sans', sans-serif;font-weight: 200;">
+          I make a profit if you buy any of these really nice things I found on the internet
+        </p>
+
+        <header class="panel-cover ig-timeline">
+          <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+              <div class="panel-main__content">
+                <article class="ig-timeline-main">
+                  <ul>
+                    {% for project in site.data.merch limit: 3 %}
+                    <li id="{{project.ig}}" {% if project.after %} data-after="{{project.after}}" {% endif %}>
+                      {% if project.link %}
+                      <a href="{{project.link}}" target="_blank" rel="noopener noreferrer">
+                        {% endif %}
+                        <img decoding="auto" style="object-fit: cover;" sizes="289.328125px" srcset="{{project.img}}"
+                          alt="{{project.alt}}">
+                        {% if project.link %}
+                      </a>
+                      {% endif %}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                  <script>
+                    const now = new Date();
+                    document.querySelectorAll('[data-after]')
+                      .forEach(node => {
+                        const parsed = new Date(node.getAttribute('data-after'));
+                        if (now < parsed) {
+                          node.parentNode.removeChild(node);
+                        }
+                      })
+                  </script>
+                </article>
+              </div>
+            </div>
+          </div>
+        </header>
+
         <div class="navigation-wrapper">
-
-
           <nav class="cover-navigation navigation--social social-icons">
             <ul class="navigation">
               {% if site.author.youtube %}
               <!-- Twitter -->
               <li class="navigation__item">
-                <a href="{{ site.author.youtube }}"
-                  title="Coding Edgar in YouTube" target="_blank" rel="noopener noreferrer">
+                <a href="{{ site.author.youtube }}" title="Coding Edgar in YouTube" target="_blank"
+                  rel="noopener noreferrer">
                   <i class="fab fa-youtube fa-lg"></i>
                   <span class="label">YouTube</span>
                 </a>
@@ -152,8 +186,62 @@
             </ul>
           </nav>
         </div>
+
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <p class="panel-cover__description" style="font-family: 'Nunito Sans', sans-serif;font-weight: 200;">
+          Tap to be redirected
+        </p>
+
+        <header class="panel-cover ig-timeline">
+          <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+              <div class="panel-main__content">
+                <article class="ig-timeline-main">
+                  <ul>
+                    {% for project in site.data.instagram limit: 6 %}
+                    <li id="{{project.ig}}" {% if project.after %} data-after="{{project.after}}" {% endif %}>
+                      {% if project.link %}
+                      <a href="{{project.link}}" target="_blank" rel="noopener noreferrer">
+                        {% endif %}
+                        <img decoding="auto" style="object-fit: cover;" sizes="289.328125px" srcset="{{project.img}}"
+                          alt="{{project.alt}}">
+                        {% if project.link %}
+                      </a>
+                      {% endif %}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                  <script>
+                    const now = new Date();
+                    document.querySelectorAll('[data-after]')
+                      .forEach(node => {
+                        const parsed = new Date(node.getAttribute('data-after'));
+                        if (now < parsed) {
+                          node.parentNode.removeChild(node);
+                        }
+                      })
+                  </script>
+                </article>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <nav class="cover-navigation navigation--social call-to-actions">
+          <ul>
+            <li class="navigation__item navigation__item_2">
+              <a href="/instagram-posts" title="Instagram">
+                <i class="fab fa-instagram fa-lg"></i>
+                Older Posts
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+
       </div>
     </div>
-    <div class="panel-cover--overlay"></div>
+    <!-- <div class="panel-cover--overlay"></div> -->
   </div>
 </header>

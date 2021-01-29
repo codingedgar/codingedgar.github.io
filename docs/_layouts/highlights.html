@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head-links.html %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/highlights.css?{{site.time | date: '%s%N'}}">
+  </head>
+  <body>
+    {% include highlights.html %}
+</body>
+</html>
