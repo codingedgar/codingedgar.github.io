@@ -199,21 +199,22 @@
               <div class="panel-main__content">
                 <article class="ig-timeline-main">
                   <ul>
-                    {% for project in site.data.instagram limit: 6 %}
-                    <li id="{{project.ig}}" {% if project.after %} data-after="{{project.after}}" {% endif %}>
-                      {% if project.link %}
-                      <a href="{{project.link}}" target="_blank" rel="noopener noreferrer">
+                    {% for project in site.data.instagram limit: 10 %}
+                      <li id="{{project.ig}}" {% if project.after %} data-after="{{project.after}}" {% endif %}>
+                        {% if project.link %}
+                          <a href="{{project.link}}" target="_blank" rel="noopener noreferrer">
                         {% endif %}
                         <img decoding="auto" style="object-fit: cover;" sizes="289.328125px" srcset="{{project.img}}"
                           alt="{{project.alt}}">
                         {% if project.link %}
-                      </a>
-                      {% endif %}
-                    </li>
+                          </a>
+                        {% endif %}
+                      </li>
                     {% endfor %}
                   </ul>
-                  <script>
+                  <!-- <script>
                     const now = new Date();
+                    console.log('runiiiing')
                     document.querySelectorAll('[data-after]')
                       .forEach(node => {
                         const parsed = new Date(node.getAttribute('data-after'));
@@ -221,7 +222,7 @@
                           node.parentNode.removeChild(node);
                         }
                       })
-                  </script>
+                  </script> -->
                 </article>
               </div>
             </div>
