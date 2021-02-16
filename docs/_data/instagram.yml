@@ -1,6 +1,51 @@
 # after: "2021-02-13T08:00:00.000Z"
 # after: "2021-02-13T17:00:00.000Z"
 
+- ig: 98
+  img: /images/ig/98codingedgar.png
+  after: "2021-02-17T08:00:00.000Z"
+  alt: "Do you like TypeScript Union types?
+
+TypeScript Union types are a potent tool to model our types.
+
+They are so powerful that they can be Union types or help us model Discriminated Unions.
+
+What's the difference between Union types and Discriminated Unions?
+
+Well, Union types are a way to let a type be either one or another (or multiple actually) things at one point.
+
+In this example \"type Player = 'X' | 'O'\" the type Player can be either X or O at any point.
+
+Discriminated Unions, however, are a special case of Union Types; they allow one type to be one thing or another based on an identifier.
+
+An example would be \"type CellState = { kind: 'Playable' } | { kind: 'Played', player: Player }\".
+
+The types are distinguishable thanks to the \"kind\" property each object posses.
+
+Not all languages possess the power of TypeScript Union type. We might take for granted the power of the TypeScript type system because Unions are one of the most basic types, but they are quite potent.
+
+TypeScript had to develop the Union type as a basic type because the dynamic nature of JavaScript made unions a common pattern, but Union types are a super-advanced topic for statically typed languages.
+
+Some languages cannot have unions of literals like our Player example where the type system discriminated between two string. They can only type strings, but not an actual value.
+
+Other languages need a token to discriminate between the types, so the language only possesses Discriminated Unions and not the more broad generalization that the TypeScript version has.
+
+Are you happy that TypeScript types are so formidable?
+
+Have any questions about web development?
+- Ask away 💌
+
+Do you want to build a web app?
+- Get in touch 👨‍💻
+⁣
+Want to support me in my journey?⁣
+💬 Leave a comment with good vibes
+🙌 Tag a friend
+🎥 Follow me on YouTube @codingedgar (link in bio)
+❤️ Destroy the like button
+
+#rxjs #expressjs #coderlife #nextjs #angularjs #nodejsdeveloper #fullstacklife #javascript #angular #devlife #jsdeveloper #webdeveloperlife #angular2 #digitalnomadlife #typescript #jsdev #reactjs #jsframework #denojs #learnjs #nodejs #reactjsframework #angular6 #reactjsacademy #reactjsdeveloper #reactjsdevelopment #reactjsdevelopers #angular7 #reactjsbootcamp #testingtypes"
+
 - ig: 97
   img: /images/ig/97codingedgar.png
   after: "2021-02-16T08:00:00.000Z"
