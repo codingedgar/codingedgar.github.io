@@ -16,17 +16,28 @@
         <nav class="cover-navigation navigation--social call-to-actions">
           <ul>
             <li class="navigation__item navigation__item_2">
+              <a href="{{ site.author.new_podcast_episode }}" title="New YouTube Video!" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-podcast fa-lg"></i>
+                New Podcast Episode 🔥
+                <span class="label">New Podcast Episode</span>
+              </a>
+            </li>  
+            <li class="navigation__item navigation__item_2">
               <a href="{{ site.author.new_youtube_video }}" title="New YouTube Video!" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-youtube fa-lg"></i>
-                New YouTube Video 🔥
-                <span class="label">New YouTube Video</span>
+                <!-- New YouTube Video 🔥 -->
+                <!-- <span class="label">New YouTube Video</span> -->
+                Latest YouTube Video
+                <span class="label">Latest YouTube Video</span>
               </a>
             </li>  
             <li class="navigation__item navigation__item_2">
               <a href="{{ site.author.new_blog_post }}" title="New Blog Post!" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-medium fa-lg"></i>
-                New Blog Post 🔥
-                <span class="label">New Blog Post 🔥</span>
+                <!-- New Blog Post 🔥
+                <span class="label">New Blog Post 🔥</span> -->
+                Latest Blog Post
+                <span class="label">Latest Blog Post</span>
               </a>
             </li>  
             <li class="navigation__item navigation__item_2">
@@ -50,8 +61,30 @@
 
           <nav class="cover-navigation navigation--social social-icons">
             <ul class="navigation">
+              {% if site.author.patreon %}
+              <!-- Patreon -->
+              <li class="navigation__item">
+                <a href="http://patreon.com/{{ site.author.patreon }}"
+                  title="Coding Edgar in Patreon" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-patreon fa-lg"></i>
+                  <span class="label">Patreon</span>
+                </a>
+              </li>
+              {% endif %}
+              
+              {% if site.author.apple_podcast %}
+              <!-- Patreon -->
+              <li class="navigation__item">
+                <a href="{{ site.author.apple_podcast }}"
+                  title="Coding Edgar in Apple Podcast" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-podcast fa-lg"></i>
+                  <span class="label">Apple Podcast</span>
+                </a>
+              </li>
+              {% endif %}
+
               {% if site.author.youtube %}
-              <!-- Twitter -->
+              <!-- Youtube -->
               <li class="navigation__item">
                 <a href="{{ site.author.youtube }}"
                   title="Coding Edgar in YouTube" target="_blank" rel="noopener noreferrer">

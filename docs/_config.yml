@@ -11,6 +11,8 @@ font_awesome: '80f7355090.js'
 author:
   name: 'Edgar Rodríguez'
   email: codingedgar@gmail.com
+  apple_podcast: https://podcasts.apple.com/us/podcast/background-noise/id1599321194
+  patreon: codingedgar
   twitter_username: codingedgar
 #  facebook_username: joshgerdes
   github_username:  codingedgar
@@ -21,6 +23,7 @@ author:
   youtube: https://www.youtube.com/channel/UCIrkqvbX0xx7Rm88kSGJ72Q
   new_youtube_video: https://youtu.be/kGlBjtowh3k
   new_blog_post: https://medium.com/javascript-in-plain-english/accomplished-freelancers-that-developers-can-learn-from-7d6fb02304d7?source=friends_link&sk=2709ed279cff28dfd3a501eac842eaa0
+  new_podcast_episode: https://www.patreon.com/posts/59677168
  
 
 # Build settings
